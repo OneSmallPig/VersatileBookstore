@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 百变书屋 Web 应用
 
-## Getting Started
+这是一个使用 Next.js 14 构建的现代化 Web 应用程序。
 
-First, run the development server:
+## 技术栈
 
+- Next.js 14 (App Router)
+- React 18
+- TypeScript
+- Tailwind CSS
+
+## 开发环境要求
+
+- Node.js 18.17 或更高版本
+- npm 9.0 或更高版本
+
+## 快速开始
+
+1. 安装依赖：
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 启动开发服务器：
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. 打开浏览器访问 [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 项目结构
 
-## Learn More
+```
+src/
+├── app/           # App Router 路由和页面组件
+├── components/    # 可复用的 React 组件
+├── lib/          # 工具函数和通用库
+└── styles/       # 全局样式文件
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 构建部署
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+构建生产版本：
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+运行生产版本：
+```bash
+npm start
+```
 
-## Deploy on Vercel
+## 代码规范
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 使用 ESLint 进行代码检查
+- 遵循 TypeScript 严格模式
+- 使用 Tailwind CSS 进行样式管理
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 许可证
+
+MIT

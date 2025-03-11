@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { Category } from '@/lib/models/category';
 
@@ -32,7 +34,7 @@ export default function CategoryCard({ category }: CategoryCardProps) {
   
   // 根据分类名称选择背景色
   const getBgColor = () => {
-    if (color) return `bg-${color}-500 hover:bg-${color}-600`;
+    if (color) return color;
     
     switch (name) {
       case '计算机科学':

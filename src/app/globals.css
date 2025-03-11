@@ -1,26 +1,78 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 243, 244, 246;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 10, 10, 10;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+}
+
+/* 书籍卡片样式 */
+.book-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover-container {
+  transition: transform 0.2s;
+}
+
+.book-card:hover .book-cover-container {
+  transform: scale(1.05);
+}
+
+.book-cover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-intro {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+}
+
+/* 标签样式 */
+.tag {
+  transition: background-color 0.2s;
+}
+
+.tag:hover {
+  background-color: #e5e7eb;
+}
+
+/* 按钮样式 */
+.btn-primary, .btn-secondary {
+  transition: all 0.2s;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: translateY(-1px);
+}
+
+/* 评分星级样式 */
+.rating {
+  transition: transform 0.2s;
+}
+
+.book-card:hover .rating {
+  transform: scale(1.1);
 }

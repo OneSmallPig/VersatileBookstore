@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="225" viewBox="0 0 150 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="150" height="225" fill="#4F46E5"/>
+  
+  <!-- 书本图标 -->
+  <path d="M35 82.5C35 77.8056 38.8056 74 43.5 74H106.5C111.194 74 115 77.8056 115 82.5V142.5C115 147.194 111.194 151 106.5 151H43.5C38.8056 151 35 147.194 35 142.5V82.5Z" fill="white" fill-opacity="0.2"/>
+  
+  <!-- 神经网络图标 -->
+  <circle cx="55" cy="95" r="5" fill="white"/>
+  <circle cx="75" cy="85" r="5" fill="white"/>
+  <circle cx="95" cy="95" r="5" fill="white"/>
+  <circle cx="55" cy="115" r="5" fill="white"/>
+  <circle cx="75" cy="125" r="5" fill="white"/>
+  <circle cx="95" cy="115" r="5" fill="white"/>
+  
+  <!-- 连接线 -->
+  <line x1="55" y1="95" x2="75" y2="85" stroke="white" stroke-width="1.5"/>
+  <line x1="75" y1="85" x2="95" y2="95" stroke="white" stroke-width="1.5"/>
+  <line x1="55" y1="95" x2="75" y2="125" stroke="white" stroke-width="1.5"/>
+  <line x1="75" y1="85" x2="55" y2="115" stroke="white" stroke-width="1.5"/>
+  <line x1="75" y1="85" x2="95" y2="115" stroke="white" stroke-width="1.5"/>
+  <line x1="95" y1="95" x2="75" y2="125" stroke="white" stroke-width="1.5"/>
+  <line x1="55" y1="115" x2="75" y2="125" stroke="white" stroke-width="1.5"/>
+  <line x1="95" y1="115" x2="75" y2="125" stroke="white" stroke-width="1.5"/>
+  
+  <!-- 书本标题文本 -->
+  <text x="75" y="170" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">深度学习</text>
+  <text x="75" y="190" font-family="Arial" font-size="12" fill="white" text-anchor="middle">伊恩·古德费洛</text>
+</svg> 

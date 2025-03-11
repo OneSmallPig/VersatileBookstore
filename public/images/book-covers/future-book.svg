@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="225" viewBox="0 0 150 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="150" height="225" fill="#10B981"/>
+  
+  <!-- 书本图标 -->
+  <path d="M35 82.5C35 77.8056 38.8056 74 43.5 74H106.5C111.194 74 115 77.8056 115 82.5V142.5C115 147.194 111.194 151 106.5 151H43.5C38.8056 151 35 147.194 35 142.5V82.5Z" fill="white" fill-opacity="0.2"/>
+  
+  <!-- 未来图标 - 太空和行星 -->
+  <circle cx="75" cy="100" r="25" fill="#064E3B"/>
+  <circle cx="75" cy="100" r="22" fill="#065F46"/>
+  <circle cx="75" cy="100" r="18" fill="#047857"/>
+  
+  <!-- 卫星轨道 -->
+  <ellipse cx="75" cy="100" rx="30" ry="10" stroke="white" stroke-width="1.5" fill="none"/>
+  
+  <!-- 小行星 -->
+  <circle cx="50" cy="95" r="3" fill="white"/>
+  <circle cx="105" cy="105" r="2" fill="white"/>
+  <circle cx="90" cy="85" r="1.5" fill="white"/>
+  
+  <!-- 星星 -->
+  <circle cx="45" cy="75" r="1" fill="white"/>
+  <circle cx="55" cy="80" r="1" fill="white"/>
+  <circle cx="100" cy="80" r="1" fill="white"/>
+  <circle cx="110" cy="90" r="1" fill="white"/>
+  <circle cx="95" cy="120" r="1" fill="white"/>
+  <circle cx="60" cy="115" r="1" fill="white"/>
+  
+  <!-- 书本标题文本 -->
+  <text x="75" y="170" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">未来简史</text>
+  <text x="75" y="190" font-family="Arial" font-size="12" fill="white" text-anchor="middle">尤瓦尔·赫拉利</text>
+</svg> 

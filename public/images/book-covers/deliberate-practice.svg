@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="225" viewBox="0 0 150 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="150" height="225" fill="#F97316"/>
+  
+  <!-- 书本图标 -->
+  <path d="M35 82.5C35 77.8056 38.8056 74 43.5 74H106.5C111.194 74 115 77.8056 115 82.5V142.5C115 147.194 111.194 151 106.5 151H43.5C38.8056 151 35 147.194 35 142.5V82.5Z" fill="white" fill-opacity="0.2"/>
+  
+  <!-- 技能提升图表 -->
+  <line x1="50" y1="125" x2="100" y2="125" stroke="white" stroke-width="2"/>
+  <line x1="50" y1="125" x2="50" y2="75" stroke="white" stroke-width="2"/>
+  
+  <!-- 技能曲线 -->
+  <path d="M50 115 C60 110, 65 105, 70 100 C75 95, 80 85, 90 75" stroke="white" stroke-width="2" fill="none"/>
+  
+  <!-- 刻意练习标记点 -->
+  <circle cx="60" cy="110" r="3" fill="white"/>
+  <circle cx="70" cy="100" r="3" fill="white"/>
+  <circle cx="80" cy="85" r="3" fill="white"/>
+  <circle cx="90" cy="75" r="3" fill="white"/>
+  
+  <!-- 箭头 -->
+  <path d="M95 80 L100 75 L95 70" stroke="white" stroke-width="2" fill="none"/>
+  <path d="M45 80 L50 75 L55 80" stroke="white" stroke-width="2" fill="none"/>
+  
+  <!-- 坐标轴标签 -->
+  <text x="75" y="140" font-family="Arial" font-size="8" fill="white" text-anchor="middle">时间/练习</text>
+  <text x="40" y="100" font-family="Arial" font-size="8" fill="white" text-anchor="middle" transform="rotate(-90, 40, 100)">技能水平</text>
+  
+  <!-- 书本标题文本 -->
+  <text x="75" y="170" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">刻意练习</text>
+  <text x="75" y="190" font-family="Arial" font-size="12" fill="white" text-anchor="middle">安德斯·艾利克森</text>
+</svg> 

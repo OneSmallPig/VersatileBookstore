@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="150" height="225" viewBox="0 0 150 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6D28D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
   <!-- 背景 -->
-  <rect width="150" height="225" fill="#10B981"/>
+  <rect width="150" height="225" fill="url(#grad1)"/>
   
-  <!-- 书本图标 -->
-  <path d="M35 82.5C35 77.8056 38.8056 74 43.5 74H106.5C111.194 74 115 77.8056 115 82.5V142.5C115 147.194 111.194 151 106.5 151H43.5C38.8056 151 35 147.194 35 142.5V82.5Z" fill="white" fill-opacity="0.2"/>
+  <!-- 科技图案 -->
+  <path d="M60 70 L90 70 L90 100 L60 100 Z" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M75 55 L75 115" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M45 85 L105 85" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+  <circle cx="75" cy="85" r="25" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
   
-  <!-- 未来图标 - 太空和行星 -->
-  <circle cx="75" cy="100" r="25" fill="#064E3B"/>
-  <circle cx="75" cy="100" r="22" fill="#065F46"/>
-  <circle cx="75" cy="100" r="18" fill="#047857"/>
+  <!-- 装饰点 -->
+  <circle cx="75" cy="85" r="2" fill="white" opacity="0.3"/>
+  <circle cx="60" cy="70" r="2" fill="white" opacity="0.3"/>
+  <circle cx="90" cy="70" r="2" fill="white" opacity="0.3"/>
+  <circle cx="60" cy="100" r="2" fill="white" opacity="0.3"/>
+  <circle cx="90" cy="100" r="2" fill="white" opacity="0.3"/>
   
-  <!-- 卫星轨道 -->
-  <ellipse cx="75" cy="100" rx="30" ry="10" stroke="white" stroke-width="1.5" fill="none"/>
-  
-  <!-- 小行星 -->
-  <circle cx="50" cy="95" r="3" fill="white"/>
-  <circle cx="105" cy="105" r="2" fill="white"/>
-  <circle cx="90" cy="85" r="1.5" fill="white"/>
-  
-  <!-- 星星 -->
-  <circle cx="45" cy="75" r="1" fill="white"/>
-  <circle cx="55" cy="80" r="1" fill="white"/>
-  <circle cx="100" cy="80" r="1" fill="white"/>
-  <circle cx="110" cy="90" r="1" fill="white"/>
-  <circle cx="95" cy="120" r="1" fill="white"/>
-  <circle cx="60" cy="115" r="1" fill="white"/>
-  
-  <!-- 书本标题文本 -->
-  <text x="75" y="170" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">未来简史</text>
-  <text x="75" y="190" font-family="Arial" font-size="12" fill="white" text-anchor="middle">尤瓦尔·赫拉利</text>
+  <!-- 书名和作者 -->
+  <text x="75" y="160" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">未来简史</text>
+  <text x="75" y="180" font-family="Arial" font-size="12" fill="white" text-anchor="middle">尤瓦尔·赫拉利</text>
 </svg> 

@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
 import { Book } from '@/lib/models/book';
 import { useRouter } from 'next/navigation';
@@ -8,10 +7,11 @@ import { toast } from 'react-hot-toast';
 
 interface BookCardProps {
   book: Book;
+  isRecommended?: boolean;
 }
 
-const BookCard: React.FC<BookCardProps> = ({ book }) => {
-  const { id, title, author, cover_image, rating = 0, category_name } = book;
+const BookCard: React.FC<BookCardProps> = ({ book, isRecommended }) => {
+  const { id, title, author, cover_image, rating = 0, category_name, description } = book;
   const router = useRouter();
 
   const handleAddToBookshelf = async () => {
@@ -59,11 +59,16 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
     <div className="book-card bg-white p-4 rounded-lg shadow-sm transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
       <div className="book-cover-container relative w-[120px] h-[180px] mx-auto mb-4">
         <Image
-          src={cover_image || '/images/book-placeholder.jpg'}
+          src={cover_image || '/images/book-covers/default-book.svg'}
           alt={title}
           fill
           className="rounded-lg shadow-md object-cover transition-transform duration-200 group-hover:scale-105"
         />
+        {isRecommended && (
+          <div className="absolute top-2 right-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded">
+            推荐
+          </div>
+        )}
       </div>
       
       <div className="book-card-content flex flex-col flex-grow">
@@ -82,6 +87,12 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
             </div>
           )}
         </div>
+
+        {description && (
+          <p className="book-intro text-sm text-gray-600 mb-3 line-clamp-3 text-left">
+            {description}
+          </p>
+        )}
 
         <div className="book-actions mt-auto flex justify-between space-x-2">
           <button

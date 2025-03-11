@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="150" height="225" viewBox="0 0 150 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EA580C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
   <!-- 背景 -->
-  <rect width="150" height="225" fill="#0EA5E9"/>
+  <rect width="150" height="225" fill="url(#grad1)"/>
   
-  <!-- 书本图标 -->
-  <path d="M35 82.5C35 77.8056 38.8056 74 43.5 74H106.5C111.194 74 115 77.8056 115 82.5V142.5C115 147.194 111.194 151 106.5 151H43.5C38.8056 151 35 147.194 35 142.5V82.5Z" fill="white" fill-opacity="0.2"/>
+  <!-- 原子图案 -->
+  <circle cx="75" cy="85" r="15" fill="white" opacity="0.2"/>
+  <ellipse cx="75" cy="85" rx="40" ry="15" stroke="white" stroke-width="1" opacity="0.3"/>
+  <ellipse cx="75" cy="85" rx="15" ry="40" stroke="white" stroke-width="1" opacity="0.3"/>
   
-  <!-- 原子图标 -->
-  <circle cx="75" cy="100" r="8" fill="white"/>
+  <!-- 装饰线条 -->
+  <line x1="30" y1="130" x2="120" y2="130" stroke="white" stroke-width="1" opacity="0.3"/>
+  <line x1="40" y1="135" x2="110" y2="135" stroke="white" stroke-width="1" opacity="0.3"/>
   
-  <!-- 电子轨道 -->
-  <ellipse cx="75" cy="100" rx="25" ry="15" stroke="white" stroke-width="1.5" fill="none"/>
-  <ellipse cx="75" cy="100" rx="15" ry="25" stroke="white" stroke-width="1.5" fill="none"/>
-  
-  <!-- 电子 -->
-  <circle cx="100" cy="100" r="3" fill="white"/>
-  <circle cx="50" cy="100" r="3" fill="white"/>
-  <circle cx="75" cy="75" r="3" fill="white"/>
-  <circle cx="75" cy="125" r="3" fill="white"/>
-  
-  <!-- 习惯打钩图标 -->
-  <rect x="55" y="130" width="40" height="5" rx="2.5" fill="white"/>
-  <rect x="55" y="120" width="40" height="5" rx="2.5" fill="white"/>
-  <rect x="55" y="140" width="40" height="5" rx="2.5" fill="white"/>
-  <path d="M50 130 L55 135 L65 125" stroke="white" stroke-width="2" fill="none"/>
-  <path d="M50 120 L55 125 L65 115" stroke="white" stroke-width="2" fill="none"/>
-  <path d="M50 140 L55 145 L65 135" stroke="white" stroke-width="2" fill="none"/>
-  
-  <!-- 书本标题文本 -->
-  <text x="75" y="170" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">原子习惯</text>
-  <text x="75" y="190" font-family="Arial" font-size="12" fill="white" text-anchor="middle">詹姆斯·克利尔</text>
+  <!-- 书名和作者 -->
+  <text x="75" y="160" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">原子习惯</text>
+  <text x="75" y="180" font-family="Arial" font-size="12" fill="white" text-anchor="middle">詹姆斯·克利尔</text>
 </svg> 
